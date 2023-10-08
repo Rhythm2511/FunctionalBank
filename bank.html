@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="mt-8 text-4xl text-center font-bold">Welcome to <span class="text-green-800">Bangladesh Bank</span></h1>
+    <main>
+        <section class="mt-8">
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto p-8 text-white">
+            <div class="bg-green-300 p-8 rounded-lg">
+                <h4 class="text-2xl">Deposit</h4>
+                <h2 class="text-4xl">$<span id="deposit-total">00</span></h2>
+            </div>
+            <div class="bg-green-400 p-8 rounded-lg">
+                <h4 class="text-2xl">Withdraw</h4>
+                <h2 class="text-4xl">$<span id="withdraw-total">00</span></h2>
+            </div>
+            <div class="bg-green-600 p-8 rounded-lg">
+                <h4 class="text-2xl">Balance</h4>
+                <h2 class="text-4xl">$<span id="balance-total">100</span></h2>
+            </div>
+        </div>
+        </section>
+        <section class="mt-6 w-3/4 mx-auto p-8">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-blue-400 rounded-lg">
+                    <h3 class="text-3xl text-white mb-4 p-6">Your Deposit</h3>
+                        <input class="w-3/4 mx-5 my-4 px-4 py-3 rounded block" type="text" name="" id="deposit-field" placeholder="$ Amount you want to deposit">
+                        <button id="btn-deposit" class="bg-green-800 hover:bg-green-300 rounded px-6 py-2 mx-4 mb-4">Submit</button>
+                </div>
+                <div class="bg-blue-600 rounded-lg">
+                    <h3 class="text-3xl text-white mb-4 p-6">Your Withdraw</h3>
+                        <input class="w-3/4 mx-5 my-4 px-4 py-3 rounded block" type="text" name="" id="withdraw-field" placeholder="$ Amount you want to withdraw">
+                        <button id="btn-withdraw" class="bg-green-800 hover:bg-green-300 rounded px-6 py-2 mx-4 mb-4">Submit</button>
+                </div>
+                    
+            </div>
+        </section>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
